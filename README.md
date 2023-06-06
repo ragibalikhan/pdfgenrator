@@ -13,12 +13,11 @@ Before using the application, you need to structure your data appropriately. Fol
 1. Create a file called `data.txt`.
 2. Populate `data.txt` with the following information:
 
-1, Videomate Banner, This a product known as the icon of Videomate, www.google.com
-2, Videomate App Logo, This is also a product known as the App icon, www.google.com
-3, Home Icon, This is a product known as an icon, but it is not the same, www.google.com
-4, Videomate, This is a product known as the Videomate icon with an erased background, www.google.com
-5, Home Icon 2, This is also a product known as an icon, www.google.com
-6, Connect Logo, This is a product known as the Connect Fluence app icon, www.google.com
+1, exampleTitle, Description, www.google.com
+2, exampleTitle2, This is also a product known as the App icon, www.google.com
+3, exampleTitle3, This is a product known as an icon, but it is not the same, www.google.com
+4, exampleTitle4, This is a product known as the  icon with an erased background, www.google.com
+5, exampleTitle5, This is also a product known as an icon, www.google.com
 
 Each line represents an entry with the following structure: `id, title, info, link`. Use a comma (`,`) as the separator between each field. The `id` should correspond to the image number.
 
