@@ -156,7 +156,32 @@ def home():
 @app.route('/download/<filename>')
 def download(filename):
     file_path = os.path.join(app.root_path, filename)
-    return send_file(file_path, as_attachment=True)
+    try:
+        # Send the file to the user for download
+        response = send_file(file_path, as_attachment=True)
+
+        # Delete the images and data.txt file
+        image_folder_path = os.path.join(app.root_path, 'images')
+        text_file_path = os.path.join(app.root_path, 'data.txt')
+
+        if os.path.exists(image_folder_path):
+            for file in os.listdir(image_folder_path):
+                file_path = os.path.join(image_folder_path, file)
+                if os.path.isfile(file_path):
+                    os.remove(file_path)
+            os.rmdir(image_folder_path)
+
+        if os.path.exists(text_file_path):
+            os.remove(text_file_path)
+
+        # Delete the generated PDF file
+        if os.path.exists(file_path):
+            os.remove(file_path)
+
+        return response
+    except Exception as e:
+        # Handle any errors that occur during file deletion
+        return str(e)
 
 
 @app.route('/tutorial')
