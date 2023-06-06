@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Generated</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        li a {
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        li a:hover {
+            background-color: #45a049;
+        }
+
+
+        body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: auto;  /* Pushes the footer to the bottom */
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="menu-toggle">&#9776;</div>
+        <ul class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="tutorial">Tutorial</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <h1>PDF Generated Successfully!</h1>
+    <p>Click the button below to download the PDF file:</p>
+    <a href="{{ download_url }}" download>
+        <button>Download PDF</button>
+    </a>
+
+    <footer>
+        &copy; 2023 All rights reserved to Ragib Ali
+    </footer>
+</body>
+</html>

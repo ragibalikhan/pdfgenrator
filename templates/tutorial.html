@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Generate PDF with Images and Text</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      margin-bottom: 10px;
+    }
+
+    .code {
+      font-family: Consolas, monospace;
+      background-color: #f0f0f0;
+      padding: 10px;
+      white-space: pre-wrap;
+    }
+
+    .code-line {
+      margin: 5px 0;
+    }
+
+
+    nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        li a {
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        li a:hover {
+            background-color: #45a049;
+        }
+
+  /* Header Styles */
+  h1 {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: auto;  /* Pushes the footer to the bottom */
+}
+
+  </style>
+</head>
+<body>
+  <nav>
+        <div class="menu-toggle">&#9776;</div>
+        <ul class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="tutorial">Tutorial</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+  <h1>How to Generate a PDF with Images and Text using a Web App</h1>
+
+  <div class="section">
+    <h2>Setting up the Data</h2>
+    <p>Before we begin, we need to structure our data appropriately. Create a file called <strong>data.txt</strong> and populate it with the following information:</p>
+
+    <pre class="code">
+1, Videomate Banner, This a product known as the icon of Videomate, www.google.com
+2, Videomate App Logo, This is also a product known as the App icon, www.google.com
+3, Home Icon, This is a product known as an icon, but it is not the same, www.google.com
+4, Videomate, This is a product known as the Videomate icon with an erased background, www.google.com
+5, Home Icon 2, This is also a product known as an icon, www.google.com
+6, Connect Logo, This is a product known as the Connect Fluence app icon, www.google.com
+    </pre>
+
+    <p>Each line represents an entry with the following structure: <strong>id, title, info, link</strong>. Make sure to use a comma (,) as the separator between each field. The id should correspond to the image number.</p>
+
+    <p>For example, the first line represents image number 1, titled "Videomate Banner," with the information "This a product known as the icon of Videomate." The link field should contain the URL associated with the image.</p>
+
+    <p>Ensure that the images referenced in <strong>data.txt</strong> are named according to their corresponding entry number. For instance, the image for the first entry should be named <strong>1.png</strong>, the second entry should have an image named <strong>2.png</strong>, and so on.</p>
+  </div>
+
+
+  <footer>
+        &copy; 2023 All rights reserved to Ragib Ali
+    </footer>
+</body>
+</html>
